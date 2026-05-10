@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="imageGallery.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Image Gallery</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to the Image Gallery</h1>
+    <p>Explore stunning visuals and creative inspirations</p>
+  </section>
+
+  <!-- Filter Buttons -->
+  <div class="filters">
+    <button onclick="filterImages('all')" class="active">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('animals')">Animals</button>
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <!-- Nature Images -->
+    <div class="gallery-item nature">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800" alt="Mountains">
+      <div class="overlay">Mountains</div>
+    </div>
+    <div class="gallery-item nature">
+      <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=800" alt="Forest">
+      <div class="overlay">Forest</div>
+    </div>
+    <div class="gallery-item nature">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800" alt="Lake">
+      <div class="overlay">Lake</div>
+    </div>
+
+    <!-- City Images -->
+    <div class="gallery-item city">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800" alt="Buildings">
+      <div class="overlay">Buildings</div>
+    </div>
+    <div class="gallery-item city">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800" alt="Streets">
+      <div class="overlay">Streets</div>
+    </div>
+    <div class="gallery-item city">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800" alt="Skyline">
+      <div class="overlay">Skyline</div>
+    </div>
+
+    <!-- Animals Images -->
+    <div class="gallery-item animals">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800" alt="Lion">
+      <div class="overlay">Lion</div>
+    </div>
+    <div class="gallery-item animals">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800" alt="Tiger">
+      <div class="overlay">Tiger</div>
+    </div>
+    <div class="gallery-item animals">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800" alt="Bird">
+      <div class="overlay">Bird</div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" alt="Fullscreen Image">
+    <div class="controls">
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="imageGallery.js"></script>
+</body>
+</html>
